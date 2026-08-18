@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Segoe UI", "Apple SD Gothic Neo", sans-serif;
+  background: #fdf1ec;
+  color: #3a2e2e;
+}
+
+.timer-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  padding: 48px 56px;
+  background: #ffffff;
+  border-radius: 24px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: lowercase;
+  color: #e05c4b;
+}
+
+.time-display {
+  font-size: 72px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 2px;
+  color: #3a2e2e;
+}
+
+.controls {
+  display: flex;
+  gap: 12px;
+}
+
+.btn {
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  border: 2px solid #e05c4b;
+  border-radius: 12px;
+  background: #ffffff;
+  color: #e05c4b;
+  cursor: pointer;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.btn:hover {
+  background: #fdf1ec;
+}
+
+.btn-primary {
+  background: #e05c4b;
+  color: #ffffff;
+}
+
+.btn-primary:hover {
+  background: #c8493a;
+}
+
+.btn-settings {
+  border: none;
+  background: none;
+  color: #9b8a8a;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 8px 12px;
+  border-radius: 8px;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.btn-settings:hover {
+  background: #f5eeee;
+  color: #3a2e2e;
+}
